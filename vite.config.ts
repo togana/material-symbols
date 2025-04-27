@@ -1,7 +1,29 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+import svgr from 'vite-plugin-svgr';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    svgr(),
+    dts({
+      exclude: ['**/*.stories.tsx'],
+    }),
+  ],
+  build: {
+    lib: {
+      entry: ['src/index.ts'],
+      name: '@togana/material-symbols',
+      formats: ['es'],
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      output: {
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+      },
+    },
+    cssCodeSplit: true,
+  },
+});
