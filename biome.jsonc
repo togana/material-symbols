@@ -1,0 +1,125 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    // 自動生成ファイルは対象に含めない
+    "ignore": ["src/symbols/icons/*.tsx"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 100
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "correctness": {
+        // tsconfig で "moduleResolution": "bundler" を指定しているので不要
+        "useImportExtensions": "off"
+      }
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    },
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "quoteProperties": "asNeeded"
+    }
+  },
+  "overrides": [
+    {
+      "include": [
+        // *.config.ts は export default を利用する
+        "*.config.ts",
+        // Storybook のファイルは export default を利用する
+        ".storybook/preview.ts",
+        ".storybook/main.ts",
+        "**/*.stories.tsx"
+      ],
+      "linter": {
+        "enabled": true,
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    },
+    {
+      // scripts 配下は node のモジュール利用する
+      "include": ["src/**/scripts/**"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": [
+        // Storybook のファイルは除外する
+        ".storybook/preview.ts",
+        ".storybook/main.ts"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredDependencies": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": [
+        // tsx は react component なので除外する
+        "**/*.tsx"
+      ],
+      "linter": {
+        "enabled": true,
+        "rules": {
+          "suspicious": {
+            "noReactSpecificProps": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": [
+        // エントリーポイントは除外する
+        "src/index.ts",
+        "src/symbols/index.ts"
+      ],
+      "linter": {
+        "enabled": true,
+        "rules": {
+          "performance": {
+            "noBarrelFile": "off",
+            "noReExportAll": "off"
+          }
+        }
+      }
+    }
+  ]
+}
