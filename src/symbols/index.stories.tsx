@@ -3,7 +3,7 @@
  * scripts/generate-symbols.ts により生成
  */
 
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon } from './';
 
 const meta: Meta<typeof Icon> = {
@@ -186,6 +186,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedActionKeyFill" width={24} height={24} />
       <Icon name="RoundedActivityZone" width={24} height={24} />
       <Icon name="RoundedActivityZoneFill" width={24} height={24} />
+      <Icon name="RoundedAcupuncture" width={24} height={24} />
+      <Icon name="RoundedAcupunctureFill" width={24} height={24} />
       <Icon name="RoundedAcute" width={24} height={24} />
       <Icon name="RoundedAcuteFill" width={24} height={24} />
       <Icon name="RoundedAd" width={24} height={24} />
@@ -448,6 +450,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedApprovalFill" width={24} height={24} />
       <Icon name="RoundedApprovalDelegation" width={24} height={24} />
       <Icon name="RoundedApprovalDelegationFill" width={24} height={24} />
+      <Icon name="RoundedApprovalDelegationOff" width={24} height={24} />
+      <Icon name="RoundedApprovalDelegationOffFill" width={24} height={24} />
       <Icon name="RoundedApps" width={24} height={24} />
       <Icon name="RoundedAppsFill" width={24} height={24} />
       <Icon name="RoundedAppsOutage" width={24} height={24} />
@@ -1870,6 +1874,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedDialpadFill" width={24} height={24} />
       <Icon name="RoundedDiamond" width={24} height={24} />
       <Icon name="RoundedDiamondFill" width={24} height={24} />
+      <Icon name="RoundedDiamondShine" width={24} height={24} />
+      <Icon name="RoundedDiamondShineFill" width={24} height={24} />
       <Icon name="RoundedDictionary" width={24} height={24} />
       <Icon name="RoundedDictionaryFill" width={24} height={24} />
       <Icon name="RoundedDifference" width={24} height={24} />
@@ -3066,6 +3072,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedHealthAndBeautyFill" width={24} height={24} />
       <Icon name="RoundedHealthAndSafety" width={24} height={24} />
       <Icon name="RoundedHealthAndSafetyFill" width={24} height={24} />
+      <Icon name="RoundedHealthCross" width={24} height={24} />
+      <Icon name="RoundedHealthCrossFill" width={24} height={24} />
       <Icon name="RoundedHealthMetrics" width={24} height={24} />
       <Icon name="RoundedHealthMetricsFill" width={24} height={24} />
       <Icon name="RoundedHeapSnapshotLarge" width={24} height={24} />
@@ -3860,6 +3868,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedMaskedTransitionsAddFill" width={24} height={24} />
       <Icon name="RoundedMasks" width={24} height={24} />
       <Icon name="RoundedMasksFill" width={24} height={24} />
+      <Icon name="RoundedMassage" width={24} height={24} />
+      <Icon name="RoundedMassageFill" width={24} height={24} />
       <Icon name="RoundedMatchCase" width={24} height={24} />
       <Icon name="RoundedMatchCaseFill" width={24} height={24} />
       <Icon name="RoundedMatchCaseOff" width={24} height={24} />
@@ -3962,6 +3972,44 @@ export const AllIcons: Story = {
       <Icon name="RoundedMixtureMedFill" width={24} height={24} />
       <Icon name="RoundedMms" width={24} height={24} />
       <Icon name="RoundedMmsFill" width={24} height={24} />
+      <Icon name="RoundedMobile" width={24} height={24} />
+      <Icon name="RoundedMobileFill" width={24} height={24} />
+      <Icon name="RoundedMobile2" width={24} height={24} />
+      <Icon name="RoundedMobile2Fill" width={24} height={24} />
+      <Icon name="RoundedMobile3" width={24} height={24} />
+      <Icon name="RoundedMobile3Fill" width={24} height={24} />
+      <Icon name="RoundedMobileAlert" width={24} height={24} />
+      <Icon name="RoundedMobileAlertFill" width={24} height={24} />
+      <Icon name="RoundedMobileArrowDown" width={24} height={24} />
+      <Icon name="RoundedMobileArrowDownFill" width={24} height={24} />
+      <Icon name="RoundedMobileArrowRight" width={24} height={24} />
+      <Icon name="RoundedMobileArrowRightFill" width={24} height={24} />
+      <Icon name="RoundedMobileArrowUpRight" width={24} height={24} />
+      <Icon name="RoundedMobileArrowUpRightFill" width={24} height={24} />
+      <Icon name="RoundedMobileBlock" width={24} height={24} />
+      <Icon name="RoundedMobileBlockFill" width={24} height={24} />
+      <Icon name="RoundedMobileCamera" width={24} height={24} />
+      <Icon name="RoundedMobileCameraFill" width={24} height={24} />
+      <Icon name="RoundedMobileCameraFront" width={24} height={24} />
+      <Icon name="RoundedMobileCameraFrontFill" width={24} height={24} />
+      <Icon name="RoundedMobileCameraRear" width={24} height={24} />
+      <Icon name="RoundedMobileCameraRearFill" width={24} height={24} />
+      <Icon name="RoundedMobileCancel" width={24} height={24} />
+      <Icon name="RoundedMobileCancelFill" width={24} height={24} />
+      <Icon name="RoundedMobileCast" width={24} height={24} />
+      <Icon name="RoundedMobileCastFill" width={24} height={24} />
+      <Icon name="RoundedMobileCharge" width={24} height={24} />
+      <Icon name="RoundedMobileChargeFill" width={24} height={24} />
+      <Icon name="RoundedMobileChat" width={24} height={24} />
+      <Icon name="RoundedMobileChatFill" width={24} height={24} />
+      <Icon name="RoundedMobileCheck" width={24} height={24} />
+      <Icon name="RoundedMobileCheckFill" width={24} height={24} />
+      <Icon name="RoundedMobileCode" width={24} height={24} />
+      <Icon name="RoundedMobileCodeFill" width={24} height={24} />
+      <Icon name="RoundedMobileDots" width={24} height={24} />
+      <Icon name="RoundedMobileDotsFill" width={24} height={24} />
+      <Icon name="RoundedMobileGear" width={24} height={24} />
+      <Icon name="RoundedMobileGearFill" width={24} height={24} />
       <Icon name="RoundedMobileHand" width={24} height={24} />
       <Icon name="RoundedMobileHandFill" width={24} height={24} />
       <Icon name="RoundedMobileHandLeft" width={24} height={24} />
@@ -3970,18 +4018,58 @@ export const AllIcons: Story = {
       <Icon name="RoundedMobileHandLeftOffFill" width={24} height={24} />
       <Icon name="RoundedMobileHandOff" width={24} height={24} />
       <Icon name="RoundedMobileHandOffFill" width={24} height={24} />
+      <Icon name="RoundedMobileInfo" width={24} height={24} />
+      <Icon name="RoundedMobileInfoFill" width={24} height={24} />
+      <Icon name="RoundedMobileLandscape" width={24} height={24} />
+      <Icon name="RoundedMobileLandscapeFill" width={24} height={24} />
+      <Icon name="RoundedMobileLayout" width={24} height={24} />
+      <Icon name="RoundedMobileLayoutFill" width={24} height={24} />
+      <Icon name="RoundedMobileLockLandscape" width={24} height={24} />
+      <Icon name="RoundedMobileLockLandscapeFill" width={24} height={24} />
+      <Icon name="RoundedMobileLockPortrait" width={24} height={24} />
+      <Icon name="RoundedMobileLockPortraitFill" width={24} height={24} />
       <Icon name="RoundedMobileLoupe" width={24} height={24} />
       <Icon name="RoundedMobileLoupeFill" width={24} height={24} />
+      <Icon name="RoundedMobileMenu" width={24} height={24} />
+      <Icon name="RoundedMobileMenuFill" width={24} height={24} />
       <Icon name="RoundedMobileOff" width={24} height={24} />
       <Icon name="RoundedMobileOffFill" width={24} height={24} />
+      <Icon name="RoundedMobileQuestion" width={24} height={24} />
+      <Icon name="RoundedMobileQuestionFill" width={24} height={24} />
+      <Icon name="RoundedMobileRotate" width={24} height={24} />
+      <Icon name="RoundedMobileRotateFill" width={24} height={24} />
+      <Icon name="RoundedMobileRotateLock" width={24} height={24} />
+      <Icon name="RoundedMobileRotateLockFill" width={24} height={24} />
       <Icon name="RoundedMobileScreenShare" width={24} height={24} />
       <Icon name="RoundedMobileScreenShareFill" width={24} height={24} />
       <Icon name="RoundedMobileScreensaver" width={24} height={24} />
       <Icon name="RoundedMobileScreensaverFill" width={24} height={24} />
+      <Icon name="RoundedMobileSensorHi" width={24} height={24} />
+      <Icon name="RoundedMobileSensorHiFill" width={24} height={24} />
+      <Icon name="RoundedMobileSensorLo" width={24} height={24} />
+      <Icon name="RoundedMobileSensorLoFill" width={24} height={24} />
+      <Icon name="RoundedMobileShare" width={24} height={24} />
+      <Icon name="RoundedMobileShareFill" width={24} height={24} />
+      <Icon name="RoundedMobileShareStack" width={24} height={24} />
+      <Icon name="RoundedMobileShareStackFill" width={24} height={24} />
+      <Icon name="RoundedMobileSound" width={24} height={24} />
+      <Icon name="RoundedMobileSoundFill" width={24} height={24} />
       <Icon name="RoundedMobileSound2" width={24} height={24} />
       <Icon name="RoundedMobileSound2Fill" width={24} height={24} />
+      <Icon name="RoundedMobileSoundOff" width={24} height={24} />
+      <Icon name="RoundedMobileSoundOffFill" width={24} height={24} />
       <Icon name="RoundedMobileSpeaker" width={24} height={24} />
       <Icon name="RoundedMobileSpeakerFill" width={24} height={24} />
+      <Icon name="RoundedMobileText" width={24} height={24} />
+      <Icon name="RoundedMobileTextFill" width={24} height={24} />
+      <Icon name="RoundedMobileText2" width={24} height={24} />
+      <Icon name="RoundedMobileText2Fill" width={24} height={24} />
+      <Icon name="RoundedMobileTicket" width={24} height={24} />
+      <Icon name="RoundedMobileTicketFill" width={24} height={24} />
+      <Icon name="RoundedMobileVibrate" width={24} height={24} />
+      <Icon name="RoundedMobileVibrateFill" width={24} height={24} />
+      <Icon name="RoundedMobileWrench" width={24} height={24} />
+      <Icon name="RoundedMobileWrenchFill" width={24} height={24} />
       <Icon name="RoundedMobiledataOff" width={24} height={24} />
       <Icon name="RoundedMobiledataOffFill" width={24} height={24} />
       <Icon name="RoundedModeComment" width={24} height={24} />
@@ -4146,6 +4234,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedMuseumFill" width={24} height={24} />
       <Icon name="RoundedMusicCast" width={24} height={24} />
       <Icon name="RoundedMusicCastFill" width={24} height={24} />
+      <Icon name="RoundedMusicHistory" width={24} height={24} />
+      <Icon name="RoundedMusicHistoryFill" width={24} height={24} />
       <Icon name="RoundedMusicNote" width={24} height={24} />
       <Icon name="RoundedMusicNoteFill" width={24} height={24} />
       <Icon name="RoundedMusicNoteAdd" width={24} height={24} />
@@ -4600,6 +4690,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedPauseCircleFill" width={24} height={24} />
       <Icon name="RoundedPausePresentation" width={24} height={24} />
       <Icon name="RoundedPausePresentationFill" width={24} height={24} />
+      <Icon name="RoundedPaymentArrowDown" width={24} height={24} />
+      <Icon name="RoundedPaymentArrowDownFill" width={24} height={24} />
       <Icon name="RoundedPayments" width={24} height={24} />
       <Icon name="RoundedPaymentsFill" width={24} height={24} />
       <Icon name="RoundedPedalBike" width={24} height={24} />
@@ -4814,6 +4906,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedPlaceItemFill" width={24} height={24} />
       <Icon name="RoundedPlagiarism" width={24} height={24} />
       <Icon name="RoundedPlagiarismFill" width={24} height={24} />
+      <Icon name="RoundedPlaneContrails" width={24} height={24} />
+      <Icon name="RoundedPlaneContrailsFill" width={24} height={24} />
       <Icon name="RoundedPlanet" width={24} height={24} />
       <Icon name="RoundedPlanetFill" width={24} height={24} />
       <Icon name="RoundedPlannerBannerAdPt" width={24} height={24} />
@@ -5604,6 +5698,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedShieldPersonFill" width={24} height={24} />
       <Icon name="RoundedShieldQuestion" width={24} height={24} />
       <Icon name="RoundedShieldQuestionFill" width={24} height={24} />
+      <Icon name="RoundedShieldToggle" width={24} height={24} />
+      <Icon name="RoundedShieldToggleFill" width={24} height={24} />
       <Icon name="RoundedShieldWatch" width={24} height={24} />
       <Icon name="RoundedShieldWatchFill" width={24} height={24} />
       <Icon name="RoundedShieldWithHeart" width={24} height={24} />
@@ -6468,12 +6564,16 @@ export const AllIcons: Story = {
       <Icon name="RoundedTimelineFill" width={24} height={24} />
       <Icon name="RoundedTimer" width={24} height={24} />
       <Icon name="RoundedTimerFill" width={24} height={24} />
+      <Icon name="RoundedTimer1" width={24} height={24} />
+      <Icon name="RoundedTimer1Fill" width={24} height={24} />
       <Icon name="RoundedTimer10" width={24} height={24} />
       <Icon name="RoundedTimer10Fill" width={24} height={24} />
       <Icon name="RoundedTimer10Alt1" width={24} height={24} />
       <Icon name="RoundedTimer10Alt1Fill" width={24} height={24} />
       <Icon name="RoundedTimer10Select" width={24} height={24} />
       <Icon name="RoundedTimer10SelectFill" width={24} height={24} />
+      <Icon name="RoundedTimer2" width={24} height={24} />
+      <Icon name="RoundedTimer2Fill" width={24} height={24} />
       <Icon name="RoundedTimer3" width={24} height={24} />
       <Icon name="RoundedTimer3Fill" width={24} height={24} />
       <Icon name="RoundedTimer3Alt1" width={24} height={24} />
@@ -6516,6 +6616,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedTollFill" width={24} height={24} />
       <Icon name="RoundedTonality" width={24} height={24} />
       <Icon name="RoundedTonalityFill" width={24} height={24} />
+      <Icon name="RoundedTonality2" width={24} height={24} />
+      <Icon name="RoundedTonality2Fill" width={24} height={24} />
       <Icon name="RoundedToolbar" width={24} height={24} />
       <Icon name="RoundedToolbarFill" width={24} height={24} />
       <Icon name="RoundedToolsFlatHead" width={24} height={24} />
@@ -6890,6 +6992,8 @@ export const AllIcons: Story = {
       <Icon name="RoundedViewWeekFill" width={24} height={24} />
       <Icon name="RoundedVignette" width={24} height={24} />
       <Icon name="RoundedVignetteFill" width={24} height={24} />
+      <Icon name="RoundedVignette2" width={24} height={24} />
+      <Icon name="RoundedVignette2Fill" width={24} height={24} />
       <Icon name="RoundedVilla" width={24} height={24} />
       <Icon name="RoundedVillaFill" width={24} height={24} />
       <Icon name="RoundedVisibility" width={24} height={24} />

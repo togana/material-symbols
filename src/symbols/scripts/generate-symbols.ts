@@ -75,7 +75,7 @@ const storyContent = `\
  * scripts/generate-symbols.ts により生成
  */
 
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon } from './';
 
 const meta: Meta<typeof Icon> = {
