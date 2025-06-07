@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "generate": "tsx src/symbols/scripts/generate-symbols.ts",
-    "build": "npm run generate && vite build",
+    "build": "npm run generate && NODE_OPTIONS=\"--max-old-space-size=8192\" vite build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "biome check --write .",
     "ci": "biome ci .",
